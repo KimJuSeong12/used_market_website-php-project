@@ -1,0 +1,117 @@
+.result_section {
+  margin-top: 24px;
+  background: #f8f9fa;
+  padding: 30px 0 40px 0;
+  display: block;
+  outline: 0 !important;
+  margin: 0;
+}
+
+.result_container {
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.trade_lists_div {
+  padding: 0 10px;
+}
+
+.trade_p {
+  font-weight: 600;
+  color: #212529;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.article_flat_card {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  width: 217px;
+  margin: 16px;
+  margin-bottom: 40px;
+}
+
+.trade_link {
+  display: block;
+  text-decoration: none;
+  color: #212529;
+}
+
+.photo {
+  height: 160px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.img_control {
+  width: 100%;
+  display: block;
+  transform: translate(0, -13%);
+}
+
+.trade_title {
+  display: block;
+  font-weight: 600;
+  color: #212529;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.region_name {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 6px;
+  color: #868e96;
+}
+
+.price_name {
+  font-weight: 600;
+  color: #ff8a3d;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 6px;
+}
+
+.more_btn_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+  width: 100%;
+  color: #868e96;
+  font-size: 16px;
+  border-top: 1px solid #e9ecef;
+}
+
+.empty_result {
+  padding: 34px 0 24px 0;
+  text-align: center;
+}
+
+.empty_result_message {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+.zero_keyword {
+  font-weight: 600;
+}
+
+.research {
+  color: #ff8a3d;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}

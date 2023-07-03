@@ -1,0 +1,602 @@
+/* 공통 */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.mypage {
+  position: relative;
+  min-width: 1050px;
+}
+.user_area {
+  width: 100%;
+  padding: 50px 0px;
+  margin-bottom: -20px;
+  background-color: rgb(247, 247, 247);
+}
+.user_main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.user_name {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 38px;
+  letter-spacing: -1px;
+  color: rgb(51, 51, 51);
+  margin: 0px;
+}
+.user_payments {
+  display: flex;
+  margin: 0px;
+}
+.user_payments_inline {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 24px 20px 26px;
+  width: 225px;
+  border: none;
+  margin-left: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-direction: column;
+}
+.user_point_area {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.user_point {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
+  color: rgb(51, 51, 51);
+}
+.user_payments_text {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.3px;
+  color: rgb(153, 153, 153);
+}
+.img_arrow {
+  display: flex;
+  margin: 0px;
+}
+.myj {
+  display: flex;
+  width: 1050px;
+  padding: 50px 0px 80px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.myj_nav {
+  width: 200px;
+}
+.myj_nav_text {
+  height: 75px;
+  padding: 5px 0px 35px 1px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 35px;
+  color: rgb(51, 51, 51);
+  letter-spacing: -1px;
+}
+.myj_nav_menu {
+  border: 1px solid rgb(242, 242, 242);
+  list-style-type: none;
+  padding: 0;
+}
+.myj_nav_menu_text {
+  cursor: pointer;
+  border-bottom: 1px solid rgb(242, 242, 242);
+  padding: 15px 13px 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 19px;
+  letter-spacing: -0.3px;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+}
+.myj_nav_menu_text:hover {
+  background-color: rgb(250, 250, 250);
+  color: #ff8c00;
+  font-weight: 500;
+}
+.myj_nav_menu_text .active {
+  background-color: rgb(250, 250, 250);
+  color: #ff8c00;
+  font-weight: 500;
+}
+/* 관심 목록 없을 경우 */
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+.like_list_area {
+  width: 820px;
+}
+.like_list_area_1 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 27px;
+  border-bottom: 2px solid rgb(51, 51, 51);
+}
+.like_list_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: rgb(51, 51, 51);
+}
+.like_list_info_text {
+  padding: 11px;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: rgb(153, 153, 153);
+  line-height: 20px;
+}
+.like_list_no {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 557px;
+}
+.like_list_no_icon {
+  width: 60px;
+  margin: 0px auto 15px;
+}
+.like_list_no_text {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(181, 181, 181);
+}
+.btn_go_second {
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 150px;
+  height: 44px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  background-color: #ff8c00;
+  border: 0px none;
+}
+.btn_go_second_text {
+  font-size: 14px;
+  line-height: 44px;
+  display: inline-block;
+  font-weight: 500;
+}
+/* 관심 목록 있을 경우 */
+.like_list_yes {
+  position: relative;
+  padding: 0px 20px;
+}
+.likeList {
+  overflow: visible;
+  width: 0px;
+}
+.like_list_area1 {
+  box-sizing: border-box;
+  direction: ltr;
+  height: auto;
+  position: relative;
+  width: 780px;
+  will-change: transform;
+  overflow: hidden;
+}
+.like_list_area2 {
+  width: auto;
+  height: auto;
+  max-width: 780px;
+  overflow: hidden;
+  position: relative;
+}
+.like_list_area3 {
+  height: 128px;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  padding: 24px 0px;
+  border-top: 1px solid rgb(244, 244, 244);
+}
+.like_list_area3_photo_area {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 78px;
+  background-color: rgb(245, 245, 245);
+  text-decoration: none;
+  color: inherit;
+}
+.like_list_area3_photo1 {
+  position: absolute;
+  width: 60px;
+  height: 78px;
+}
+.like_list_area3_photo2 {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  inset: 0px;
+}
+.like_list_area3_photo3 {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  /* vertical-align: top; */
+}
+.like_list_area4 {
+  width: calc(100% - 90px);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+}
+.like_list_area4_main {
+  padding: 0px 20px;
+}
+.like_list_area4_title {
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+  font-size: 16px;
+  line-height: normal;
+}
+.like_list_area4_title_a {
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+.like_list_area4_price_area {
+  margin-top: 6px;
+  font-size: 16px;
+}
+.like_list_area4_price {
+  margin-right: 4px;
+  line-height: 19px;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+.like_list_area5 {
+  display: flex;
+  flex-direction: column;
+}
+.like_list_area5 > button {
+  padding: 0px;
+}
+/* .like_list_delete {
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 104px;
+  height: 36px;
+  border-radius: 4px;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+  cursor: pointer;
+}
+.like_list_delete_text {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+} */
+/* 개인 정보 수정 페이지 초기 진입 시 */
+.info_area {
+  width: 820px;
+}
+.info_area_1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 27px;
+  justify-content: space-between;
+}
+.info_area_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info_title {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  letter-spacing: -0.5px;
+  line-height: 48px;
+}
+.info_area_2 {
+  width: 820px;
+  margin: 0px auto;
+}
+.password_recheck_text {
+  padding-bottom: 8px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.password_recheck_info_text {
+  padding-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(102, 102, 102);
+}
+.info_area_3 {
+  padding: 7px 60px 7px 120px;
+  border-top: 2px solid rgb(51, 51, 51);
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.info_area_3_id,
+.info_area_3_pw {
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 20px;
+}
+.info_area_3_id_1,
+.info_area_3_pw_1 {
+  width: 139px;
+  padding-top: 12px;
+}
+.info_area_3_user_id,
+.info_area_3_user_pw {
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  line-height: 20px;
+}
+.info_area_3_id_2,
+.info_area_3_pw_2 {
+  flex: 1 1 0%;
+}
+.info_area_3_id_2_1,
+.info_area_3_pw_2_1 {
+  padding: 0px;
+}
+.info_area_3_id_2_1_1,
+.info_area_3_pw_2_1_1 {
+  position: relative;
+  height: 48px;
+}
+.info_area_3_id_2_1 input,
+.info_area_3_pw_2_1 input {
+  font-size: 14px;
+}
+.info_area_3_id_2_1_1_input,
+.info_area_3_pw_2_1_1_input {
+  width: 100%;
+  height: 46px;
+  padding: 0px 11px 1px 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(221, 221, 221);
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(51, 51, 51);
+  outline: none;
+  box-sizing: border-box;
+}
+.info_area_3_id_3,
+.info_area_3_pw_3 {
+  width: 120px;
+  margin-left: 8px;
+}
+.info_area_3_user_pw_essential {
+  color: rgb(238, 106, 123);
+}
+.btn_area {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn_ok {
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 240px;
+  height: 56px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  background-color: #ff8c00;
+  border: 0px none;
+}
+.btn_ok_text {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* 개인 정보 수정 페이지 비밀번호 입력 후 진입 시 */
+.info_modify {
+  width: 820px;
+  margin: 0px auto;
+  padding: 7px 60px 7px 120px;
+  border-top: 2px solid rgb(51, 51, 51);
+}
+.info_modify_id_area,
+.info_modify_old_pw_area,
+.info_modify_new_pw_area,
+.info_modify_new_pw_cf_area,
+.info_modify_name_area,
+.info_modify_email_area,
+.info_modify_phone_area {
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 20px;
+}
+.info_modify_id_text,
+.info_modify_old_pw_text,
+.info_modify_new_pw_text,
+.info_modify_new_pw_cf_text,
+.info_modify_name_text,
+.info_modify_email_text,
+.info_modify_phone_text {
+  width: 139px;
+  padding-top: 12px;
+}
+.info_modify_id_label,
+.info_modify_old_pw_label,
+.info_modify_new_pw_label,
+.info_modify_new_pw_cf_label,
+.info_modify_name_label,
+.info_modify_email_label,
+.info_modify_phone_label {
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  line-height: 20px;
+}
+.info_modify_id_input,
+.info_modify_old_pw_input,
+.info_modify_new_pw_input,
+.info_modify_new_pw_cf_input,
+.info_modify_name_input,
+.info_modify_email_input,
+.info_modify_phone_input {
+  flex: 1 1 0%;
+}
+.info_modify_id_input2,
+.info_modify_old_pw_input2,
+.info_modify_new_pw_input2,
+.info_modify_new_pw_cf_input2,
+.info_modify_name_input2,
+.info_modify_email_input2,
+.info_modify_phone_input2 {
+  padding: 0px;
+}
+.info_modify_id_input3,
+.info_modify_old_pw_input3,
+.info_modify_new_pw_input3,
+.info_modify_new_pw_cf_input3,
+.info_modify_name_input3,
+.info_modify_email_input3,
+.info_modify_phone_input3 {
+  position: relative;
+  height: 48px;
+}
+.info_modify_id_input4,
+.info_modify_old_pw_input4,
+.info_modify_new_pw_input4,
+.info_modify_new_pw_cf_input4,
+.info_modify_name_input4,
+.info_modify_email_input4,
+.info_modify_phone_input4 {
+  width: 100%;
+  height: 46px;
+  padding: 0px 11px 1px 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(221, 221, 221);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(51, 51, 51);
+  outline: none;
+  box-sizing: border-box;
+}
+.info_modify_id_input5,
+.info_modify_old_pw_input5,
+.info_modify_new_pw_input5,
+.info_modify_new_pw_cf_input5,
+.info_modify_name_input5,
+.info_modify_email_input5,
+.info_modify_phone_input5 {
+  width: 120px;
+  margin-left: 8px;
+}
+.btn_cf_email,
+.btn_cf_phone {
+  height: 44px;
+  border-radius: 3px;
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 3px;
+  color: #ff8c00;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ff8c00;
+  cursor: pointer;
+}
+.btn_cf_email_text,
+.btn_cf_phone_text {
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+}
+.modify_btn_area {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 40px;
+  border-top: 1px solid rgb(244, 244, 244);
+}
+.modify_btn_area > button {
+  width: 120px;
+  height: 44px;
+  margin: 0px 3px;
+  border-radius: 3px;
+}
+.btn_withdrawal {
+  display: block;
+  padding: 0px px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 52px;
+  border-radius: 3px;
+  color: #ff8c00;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ff8c00;
+}
+.btn_withdrawal_text,
+.btn_user_info_modify_text {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn_user_info_modify {
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 52px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  background-color: #ff8c00;
+  border: 0px none;
+}

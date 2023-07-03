@@ -1,0 +1,316 @@
+.main_container {
+  padding: 2.5rem 1rem 5rem;
+  color: #212124;
+  margin: 0 auto;
+  max-width: 48rem;
+}
+
+.image_slide_flex {
+  transform: translate3d(0px, 0px, 0px);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.slide_div {
+  width: 768px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.image_div {
+  border-radius: 0.75rem;
+  padding-bottom: 61%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.image_span {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  inset: 0px;
+}
+
+.image_span img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.member_information_section {
+  padding: 1.5rem 0;
+  background-color: #fff;
+  color: #212124;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information_div_flex {
+  height: 3rem;
+  color: #212124;
+  display: flex;
+}
+
+.profile_div {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profiel_div img {
+  width: 256px;
+  height: 256px;
+}
+
+.information_texts {
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #212124;
+}
+
+.text_userid {
+  line-height: 1.32;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.text_addr {
+  line-height: 1.4;
+  font-size: 0.875rem;
+  color: #212124;
+}
+
+.like_div {
+  width: 36px;
+  height: 36px;
+}
+
+.like_div:hover {
+  cursor: pointer;
+}
+
+.line {
+  margin: 0;
+  width: 100%;
+  background-color: #dcdee3;
+  box-sizing: border-box;
+  height: 1px;
+}
+
+.title_text {
+  margin: 2rem 0;
+}
+
+.car_type {
+  line-height: 1.4;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.car_price {
+  line-height: 1.3;
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+  font-weight: 700;
+  color: #212124;
+}
+
+.price_info {
+  margin-bottom: 3.5rem;
+  padding: 0;
+  background-color: #fff;
+  color: #212124;
+}
+
+.price_info_h2 {
+  line-height: 1.3;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.price_info_ul {
+  padding: 0;
+  margin: 0;
+}
+
+.price_info_lists {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.total_price {
+  line-height: 1.32;
+  font-size: 1.125rem;
+  width: 11.25rem;
+  min-width: 11.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #868b94;
+}
+
+.total_price_data_div {
+  line-height: 1.32;
+  font-size: 1.125rem;
+  margin-left: 4px;
+}
+
+.total_price_data {
+  line-height: 1.32;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.information_section {
+  margin-bottom: 3.5rem;
+  padding: 0;
+  background-color: #fff;
+  color: #212124;
+}
+
+.information_h2 {
+  line-height: 1.3;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.room_information_ul {
+  padding: 0;
+  margin: 0;
+}
+
+.ri_contents {
+  display: flex;
+  margin-top: 0.725rem;
+}
+
+.ri_list {
+  line-height: 1.32;
+  font-size: 1.125rem;
+  color: #868b94;
+  width: 11.25rem;
+  min-width: 11.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ri_data {
+  line-height: 1.32;
+  font-size: 1.125rem;
+  margin-left: 4px;
+  color: #212124;
+}
+
+.insurance {
+  margin-bottom: 3.5rem;
+  padding: 0;
+  background-color: #fff;
+  color: #212124;
+}
+
+.insurance_info {
+  line-height: 1.3;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.insurance_info_contents {
+  padding: 0;
+  margin: 0;
+}
+
+.ii_contents {
+  display: flex;
+  margin-top: 0.725rem;
+}
+
+.blank_div {
+  margin-top: 1.25rem;
+  min-height: 2.75rem;
+}
+
+.car_option {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.car_option_list {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.car_option_span {
+  line-height: 1.32;
+  font-size: 1.125rem;
+  margin-left: 1rem;
+}
+
+.detail_contents {
+  margin-bottom: 3.5rem;
+  padding: 0;
+  background-color: #fff;
+  color: #212124;
+}
+
+.detail_contents_h2 {
+  line-height: 1.3;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.contents {
+  line-height: 1.32;
+  font-size: 1.125rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow: hidden;
+  margin: 0;
+}

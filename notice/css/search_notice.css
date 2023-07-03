@@ -1,0 +1,51 @@
+.main_container {
+  padding: 2.5rem 1rem 5rem;
+  margin: 0 auto;
+  max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search_h2 {
+  margin-top: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.43rem;
+  margin: 3.2rem 0 0 0;
+}
+
+.div_p {
+  margin: 0.8rem 0 2rem 0;
+}
+
+.search_lists {
+  list-style: none;
+}
+
+.search_li {
+  border-bottom: 1px solid gray;
+}
+
+.search_a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 2.5rem;
+  gap: 2.5rem;
+  padding: 1rem 0;
+}
+
+.width_control {
+  width: calc(100% - 4rem);
+}
+
+.content {
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #34373d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 0.2rem;
+}
